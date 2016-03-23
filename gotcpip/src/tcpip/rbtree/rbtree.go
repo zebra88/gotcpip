@@ -535,25 +535,3 @@ func InitRBtreeMemPool() {
 	)
 
 }
-
-/*
-func pico_tree_foreach(idx *Node, tree *RBtree) {
-    for (idx) = pico_tree_firstNode((tree)->root); \
-         (idx) != &LEAF; \
-         (idx) = pico_tree_next(idx))
-}
-#define pico_tree_foreach_reverse(idx, tree) \
-    for ((idx) = pico_tree_lastNode((tree)->root); \
-         (idx) != &LEAF; \
-         (idx) = pico_tree_prev(idx))
-
-#define pico_tree_foreach_safe(idx, tree, idx2) \
-    for ((idx) = pico_tree_firstNode((tree)->root); \
-         ((idx) != &LEAF) && ((idx2) = pico_tree_next(idx), 1); \
-         (idx) = (idx2))
-
-#define pico_tree_foreach_reverse_safe(idx, tree, idx2) \
-    for ((idx) = pico_tree_lastNode((tree)->root); \
-         ((idx) != &LEAF) && ((idx2) = pico_tree_prev(idx), 1); \
-         (idx) = (idx2))
-*/
